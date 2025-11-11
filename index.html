@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Login Right Frame</title>
     <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background-color: #f4f6f9;
-      }
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-      .bg {
-        width: 100%;
-        height: 100%;
-        background-image: url('https://raw.githubusercontent.com/annaschonarth95/Salesforce-Assets/main/login-frame.jpg');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+        .img-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     </style>
-  </head>
-  <body>
-    <div class="bg"></div>
-  </body>
+</head>
+<body>
+    <div class="img-wrapper">
+        <img src="https://raw.githubusercontent.com/annaschonarth95/Salesforce-Assets/main/login-frame.jpg">
+    </div>
+</body>
 </html>
