@@ -2,26 +2,32 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Salesforce Login Right Frame</title>
+    <title>Salesforce Login Right Frame – Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
-            background-color: #f4f6f9; /* Hintergrundfarbe für eventuelle Ränder */
+            background-color: #f4f6f9;
         }
 
-        /* Container füllt die gesamte rechte Frame-Höhe */
+        /* Rechte Login-Spalte simulieren */
         .right-frame {
             width: 100%;
-            height: 100%;
-            background-image: url('https://raw.githubusercontent.com/annaschonarth95/Salesforce-Assets/main/login-frame.jpg');
+            height: 100vh;
 
-            /* Wichtig: komplettes Bild sichtbar, niemals beschnitten */
+            /* Dein Bild */
+            background-image: url("https://raw.githubusercontent.com/annaschonarth95/Salesforce-Assets/main/login-frame.jpg");
+
+            /* Bild komplett anzeigen, nie beschneiden */
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+
+            /* Falls Seitenverhältnis nicht passt: Ränder in UI-Farbe */
+            background-color: #f4f6f9;
         }
     </style>
 </head>
